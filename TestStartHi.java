@@ -20,7 +20,7 @@ public class TestStartHi {
 		  if (str.length() < 2) 
 		      return false;
 		  
-		  else if (str.substring(0,2) == "hi")
+		  else if (str.substring(0,2).equals("hi") )
 		            return true;
 		  
 		  else
