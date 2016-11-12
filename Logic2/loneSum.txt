@@ -1,3 +1,20 @@
 public int loneSum(int a, int b, int c) {
   
+  if(a == b & a != c){
+    return c;
+  }
+  
+  if(a ==c && a != b){
+    return b;
+  }
+  
+  if(a == b && b == c){
+    return 0;
+  }
+  
+  return a + b + c;
 }
+
+
+//1 - The following test are failing:
+//loneSum(9, 2, 2) → 9
