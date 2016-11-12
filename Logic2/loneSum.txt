@@ -11,10 +11,15 @@ public int loneSum(int a, int b, int c) {
   if(a == b && b == c){
     return 0;
   }
+
+  if( a != b && b == c){
+  	return a;
+  }
   
   return a + b + c;
 }
 
 
-//1 - The following test are failing:
-//loneSum(9, 2, 2) → 9
+// 2 - Final attempt
+//All test are passing now. In the first attempt I missed out one logic, and did not find out until after I ran the unit test
+//Lessons learn - need to carefully check all scenarios
